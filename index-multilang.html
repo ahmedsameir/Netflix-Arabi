@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Arabi</title>
+    <link rel="stylesheet" href="style-new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index-multilang.html">Netflix Arabi</a>
+        </div>
+        <div class="navbar__search">
+            <input type="text" placeholder="Search for a movie or show">
+            <button><i class="fas fa-search"></i></button>
+        </div>
+        <div class="navbar__user">
+            <!-- محدد اللغة -->
+            <div class="language-selector">
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+            <a href="#"><i class="fas fa-bell"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </div>
+    </nav>
+
+    <!-- قسم العروض الرئيسية -->
+    <header class="hero">
+        <div class="hero__background">
+            <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hero Background">
+        </div>
+        <div class="hero__content">
+            <h1>Featured Movie or Show</h1>
+            <p>A brief description of the main content, a summary of the story or main theme.</p>
+            <div class="hero__buttons">
+                <button class="btn btn--primary"><i class="fas fa-play"></i> Play</button>
+                <button class="btn btn--secondary"><i class="fas fa-info-circle"></i> More Info</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- الأقسام -->
+    <main>
+        <!-- قسم الأفلام الشعبية -->
+        <section class="section">
+            <div class="section__header">
+                <h2>Popular Movies</h2>
+                <a href="#" class="see-all">See All <i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div class="movies-container">
+                <!-- فيلم 1 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1489599843091-30c0b5d7ce48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Movie Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Movie Title</h3>
+                        <div class="movie-card__rating">
+                            <span>8.5</span>
+                            <span>Year</span>
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فيلم 2 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Movie Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Movie Title</h3>
+                        <div class="movie-card__rating">
+                            <span>7.8</span>
+                            <span>Year</span>
+                            <span>12+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فيلم 3 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Movie Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Movie Title</h3>
+                        <div class="movie-card__rating">
+                            <span>9.2</span>
+                            <span>Year</span>
+                            <span>18+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فيلم 4 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Movie Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Movie Title</h3>
+                        <div class="movie-card__rating">
+                            <span>8.0</span>
+                            <span>Year</span>
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فيلم 5 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1489599843091-30c0b5d7ce48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Movie Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Movie Title</h3>
+                        <div class="movie-card__rating">
+                            <span>7.5</span>
+                            <span>Year</span>
+                            <span>12+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- فيلم 6 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Movie Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Movie Title</h3>
+                        <div class="movie-card__rating">
+                            <span>8.7</span>
+                            <span>Year</span>
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- قسم المسلسلات الشعبية -->
+        <section class="section">
+            <div class="section__header">
+                <h2>Popular Shows</h2>
+                <a href="#" class="see-all">See All <i class="fas fa-chevron-left"></i></a>
+            </div>
+            <div class="movies-container">
+                <!-- مسلسل 1 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Show Title</h3>
+                        <div class="movie-card__rating">
+                            <span>9.0</span>
+                            <span>Year</span>
+                            <span>18+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مسلسل 2 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1489599843091-30c0b5d7ce48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Show Title</h3>
+                        <div class="movie-card__rating">
+                            <span>8.3</span>
+                            <span>Year</span>
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مسلسل 3 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1440404653325-ab127d49abc1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Show Title</h3>
+                        <div class="movie-card__rating">
+                            <span>7.9</span>
+                            <span>Year</span>
+                            <span>12+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مسلسل 4 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1535016120720-40c646be5580?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Show Title</h3>
+                        <div class="movie-card__rating">
+                            <span>8.5</span>
+                            <span>Year</span>
+                            <span>16+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مسلسل 5 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1518676590629-3dcbd9c5a5c9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Show Title</h3>
+                        <div class="movie-card__rating">
+                            <span>7.8</span>
+                            <span>Year</span>
+                            <span>12+</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- مسلسل 6 -->
+                <div class="movie-card">
+                    <div class="movie-card__img">
+                        <img src="https://images.unsplash.com/photo-1489599843091-30c0b5d7ce48?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Show Poster">
+                        <div class="movie-card__icons">
+                            <button><i class="fas fa-play"></i></button>
+                            <button><i class="fas fa-plus"></i></button>
+                        </div>
+                    </div>
+                    <div class="movie-card__info">
+                        <h3>Show Title</h3>
+                        <div class="movie-card__rating">
+                            <span>9.1</span>
+                            <span>Year</span>
+                            <span>18+</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- تذييل الصفحة -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__section">
+                <h3>Service</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Shows</a></li>
+                    <li><a href="#">Latest Additions</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3>Help</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Account</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3>About</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Clients</a></li>
+                    <li><a href="#">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="footer__section">
+                <h3>Contact Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i> YouTube</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__copyright">
+            <p>&copy; 2023 Netflix Arabi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language-manager.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

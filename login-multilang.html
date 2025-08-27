@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Netflix Arabi</title>
+    <link rel="stylesheet" href="style-new.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* إضافات خاصة لصفحة تسجيل الدخول */
+        .login-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #000;
+        }
+
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 40px;
+            border-radius: 4px;
+            border: 1px solid #333;
+        }
+
+        .login-form h1 {
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        .btn-login {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: bold;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-login:hover {
+            background-color: #f40612;
+        }
+
+        .login-form .form-links {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .login-form .form-links a {
+            color: white;
+            font-size: 0.9rem;
+            text-decoration: underline;
+        }
+
+        .login-form .divider {
+            text-align: center;
+            margin: 20px 0;
+            position: relative;
+        }
+
+        .login-form .divider::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .login-form .divider span {
+            background-color: rgba(0, 0, 0, 0.8);
+            padding: 0 10px;
+            position: relative;
+        }
+
+        .login-form .btn-google {
+            width: 100%;
+            padding: 12px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 4px;
+            color: white;
+            font-size: 1rem;
+            cursor: pointer;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .login-form .btn-google:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .login-form .signup-link {
+            text-align: center;
+            color: white;
+            font-size: 0.9rem;
+        }
+
+        .login-form .signup-link a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- شريط التنقل العلوي -->
+    <nav class="navbar">
+        <div class="navbar__logo">
+            <a href="index-multilang.html">Netflix Arabi</a>
+        </div>
+        <div class="navbar__user">
+            <!-- محدد اللغة -->
+            <div class="language-selector">
+                <select id="languageSelector">
+                    <option value="en">English</option>
+                    <option value="ar">العربية</option>
+                </select>
+            </div>
+            <a href="login-multilang.html">Login</a>
+        </div>
+    </nav>
+
+    <!-- نموذج تسجيل الدخول -->
+    <div class="login-container">
+        <form class="login-form" action="#" method="post">
+            <h1>Login</h1>
+
+            <div class="form-group">
+                <label for="email">Email or Phone Number</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+
+            <button type="submit" class="btn-login">Login</button>
+
+            <div class="form-links">
+                <a href="#">Forgot Password?</a>
+                <a href="#">Help</a>
+            </div>
+
+            <div class="divider">
+                <span>Or</span>
+            </div>
+
+            <button type="button" class="btn-google">
+                <i class="fab fa-google"></i>
+                Sign in with Google
+            </button>
+
+            <div class="signup-link">
+                <p>Don't have an account? <a href="signup-multilang.html">Sign up now</a></p>
+            </div>
+        </form>
+    </div>
+
+    <script src="js/translations.js"></script>
+    <script src="js/language-manager.js"></script>
+</body>
+</html>
